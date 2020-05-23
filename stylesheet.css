@@ -7,9 +7,17 @@ section {
   border: solid;
 }
 
+nav {
+  border: dotted;
+}
+
 .header {
   border: solid;
   height: 100px;
+  display: grid;
+  height:100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .container{
@@ -20,6 +28,20 @@ section {
   grid-template-areas:
   "card1 card2 card3 card4"
   "card5 card6 card7 card8"
+}
+
+.filler1 {
+  grid-column: span 5;
+}
+
+.filler2 {
+  grid-column: span 2;
+}
+
+.card {
+  color: white;
+  font: Times;
+  font-size: 2vw;
 }
 
 .card1 {
