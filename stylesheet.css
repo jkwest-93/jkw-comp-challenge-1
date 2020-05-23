@@ -1,6 +1,14 @@
 body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #D5E1DF;
   display: grid;
-  grid-template-columns:
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  grid-template-areas:
+  "header"
+  "sub-header"
+  "container";
 }
 
 section {
@@ -12,12 +20,19 @@ nav {
 }
 
 .header {
+  background-color: #3E4444;
+  color: #D6CBD3;
   border: solid;
   height: 100px;
   display: grid;
   height:100%;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  font-size: 2vw;
+}
+
+.sub-header {
+  font-size: 3vw;
 }
 
 .container{
@@ -41,7 +56,8 @@ nav {
 .card {
   color: white;
   font: Times;
-  font-size: 2vw;
+  font-size: 4vw;
+  text-align: center;
 }
 
 .card1 {
