@@ -1,0 +1,55 @@
+body {
+  display: grid;
+  grid-template-columns:
+}
+
+section {
+  border: solid;
+}
+
+.header {
+  border: solid;
+  height: 100px;
+}
+
+.container{
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+  "card1 card2 card3 card4"
+  "card5 card6 card7 card8"
+}
+
+.card1 {
+  background-color: #BC243C;
+}
+
+.card2 {
+  background-color: #E15D44;
+}
+
+.card3{
+  background-color: #EFC050;
+}
+
+.card4{
+  background-color: #009B77;
+}
+
+.card5 {
+  background-color: #45B8AC;
+}
+
+.card6{
+  background-color: #98B4D4;
+}
+
+.card7 {
+  background-color: #5B5EA6;
+}
+
+.card8 {
+  background-color: #6B5B95;
+}
