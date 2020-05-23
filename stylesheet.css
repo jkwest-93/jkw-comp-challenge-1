@@ -32,10 +32,12 @@ nav {
 }
 
 .sub-header {
+  padding: 1%;
   font-size: 3vw;
 }
 
 .container{
+  padding: 1%;
   display: grid;
   height: 100%;
   grid-template-columns: repeat(4, 1fr);
@@ -43,6 +45,24 @@ nav {
   grid-template-areas:
   "card1 card2 card3 card4"
   "card5 card6 card7 card8"
+}
+
+.link {
+  display: flex;
+  border: 1px dashed;
+  justify-content: space-around;
+}
+
+.link1 {
+
+}
+
+.link2 {
+
+}
+
+.link3 {
+
 }
 
 .filler1 {
