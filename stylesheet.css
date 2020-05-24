@@ -122,6 +122,46 @@ nav {
   background-color: #5B5EA6;
 }
 
+.img-head1 {
+  background-image: url("card-images/size3/apple_1920.jpg");
+  background-size: 250px;
+}
+
+.img-head2 {
+  background-image: url("card-images/size3/banana_1920.jpg");
+  background-size: 250px;
+}
+
+.img-head3 {
+  background-image: url("card-images/size3/cherries_1920.jpg");
+  background-size: 250px;
+}
+
+.img-head4 {
+  background-image: url("card-images/size3/dragonfruit_1920.jpg");
+  background-size: 250px;
+}
+
+.img-head5 {
+  background-image: url("card-images/size3/elderberry_1920.jpg");
+  background-size: 250px;
+}
+
+.img-head6 {
+  background-image: url("card-images/size3/fig_1920.jpg");
+  background-size: 250px;
+}
+
+.img-head7 {
+  background-image: url("card-images/size3/honeydew_1920.jpg");
+  background-size: 250px;
+}
+
+.img-head8 {
+  background-image: url("card-images/size3/grape_1920.jpg");
+  background-size: 250px;
+}
+
 .card8 {
   background-color: #6B5B95;
 }
