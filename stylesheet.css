@@ -40,11 +40,13 @@ nav {
   padding: 1%;
   display: grid;
   height: 100%;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
+  grid-gap: 2%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-rows: repeat(2, 1fr); */
+  /* grid-template-areas:
   "card1 card2 card3 card4"
-  "card5 card6 card7 card8"
+  "card5 card6 card7 card8" */
 }
 
 .link {
@@ -54,23 +56,25 @@ nav {
 }
 
 .link1 {
-
+  grid-row: 2;
 }
 
 .link2 {
-
+ grid-row: 2;
 }
 
 .link3 {
-
+  grid-row: 2;
 }
 
-.filler1 {
-  grid-column: span 5;
+.login {
+  grid-row: 1;
+  grid-column: 6;
 }
 
-.filler2 {
-  grid-column: span 2;
+.home-icon {
+  grid-row: 2;
+  grid-column: 6;
 }
 
 .card {
@@ -78,6 +82,16 @@ nav {
   font: Times;
   font-size: 4vw;
   text-align: center;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.img-head {
+  font-size: 2vw;
+  grid-row: 1 / span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .card1 {
