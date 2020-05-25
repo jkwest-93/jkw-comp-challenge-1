@@ -2,26 +2,18 @@ body {
   font-family: Arial Black;
   margin: 0px;
   padding: 0px;
-  background-color: #D5E1DF;
-  display: flex;
-  flex-direction: column;
-  /* display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 3;
-  grid-template-areas:
-  "header"
-  "sub-header"
-  "container"; */
+  background-color: #F7F7F7;
 }
 
 .header {
-  background-color: #3E4444;
+  display: flex;
+  flex-grow: 2;
+  background-color: #024249;
   color: #D6CBD3;
-  border: solid;
   font-size: 2vw;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 150px) {
   .header {
     display: flex;
     flex-direction: column-reverse;
@@ -31,17 +23,34 @@ body {
   .header-right {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .header-left {
     display: flex;
     flex-direction: row;
-    align-self: center;
   }
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (max-width: 400px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-left{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 401px) {
   .header {
     display: flex;
     justify-content: space-between;
@@ -63,10 +72,11 @@ body {
 .link {
   display: flex;
   height: 4vh;
-  border: 1px dashed;
   font-size: 2vh;
   align-items: center;
   justify-content: center;
+  margin: 5%;
+
 
   /* display: grid;
   grid-gap: 10%;
@@ -120,6 +130,7 @@ body {
   font: Times;
   font-size: 4vw;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: grid;
   grid-template-rows: repeat(6, 1fr);
 }
