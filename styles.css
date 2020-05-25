@@ -3,28 +3,94 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: #D5E1DF;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  /* display: grid;
   grid-template-columns: 1;
   grid-template-rows: 3;
   grid-template-areas:
   "header"
   "sub-header"
-  "container";
+  "container"; */
 }
 
 .header {
   background-color: #3E4444;
   color: #D6CBD3;
   border: solid;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 2fr 6fr;
   font-size: 2vw;
-  align-items: end;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+}
+
+.link {
+  display: flex;
+  height: 4vh;
+  border: 1px dashed;
+  font-size: 2vh;
+  align-items: center;
+  justify-content: center;
+
+  /* display: grid;
+  grid-gap: 10%;
+  grid-template-columns: repeat(5,1fr);
+  height: 4vh;
+  border: 1px dashed;
+  font-size: 2vh;
+  align-items: center;
+  align-content: space-evenly; */
+}
+
+.home-icon {
+  height: 12vh;
+}
+
+.icon {
+  width: 2vh;
+  height: 2vh;
+  position: relative;
+  align-self: center;
 }
 
 .login {
-  height: 2vh;
+  height: 2vw;
   display: flex;
   font-size: 1vh;
   align-items: center;
@@ -47,58 +113,6 @@ body {
   /* grid-template-areas:
   "card1 card2 card3 card4"
   "card5 card6 card7 card8" */
-}
-
-.link {
-  display: flex;
-  height: 4vh;
-  border: 1px dashed;
-  font-size: 2vh;
-  align-items: center;
-  justify-content: space-around;
-
-  /* display: grid;
-  grid-gap: 10%;
-  grid-template-columns: repeat(5,1fr);
-  height: 4vh;
-  border: 1px dashed;
-  font-size: 2vh;
-  align-items: center;
-  align-content: space-evenly; */
-}
-
-.home-icon {
-  height: 12vh;
-}
-
-.icon {
-  width: 2vh;
-  height: 2vh;
-  position: relative;
-  align-self: center;
-  grid-column: 1;
-}
-
-.link1 {
-  grid-row: 2;
-}
-
-.link2 {
- grid-row: 2;
-}
-
-.link3 {
-  grid-row: 2;
-}
-
-.login {
-  grid-row: 1;
-  grid-column: 6;
-}
-
-.home-icon {
-  grid-row: 2;
-  grid-column: 6;
 }
 
 .card {
