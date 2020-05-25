@@ -52,8 +52,41 @@ nav {
 
 .link {
   display: flex;
+  height: 4vh;
   border: 1px dashed;
+  font-size: 2vh;
+  align-items: center;
   justify-content: space-around;
+
+  /* display: grid;
+  grid-gap: 10%;
+  grid-template-columns: repeat(5,1fr);
+  height: 4vh;
+  border: 1px dashed;
+  font-size: 2vh;
+  align-items: center;
+  align-content: space-evenly; */
+}
+
+.home-icon {
+  height: 12vh;
+}
+
+.browse-icon {
+  grid-column: 2 / 3;
+  height: 2vh;
+}
+
+.nav-browse {
+  grid-column: 3  / -1;
+}
+
+.icon {
+  width: 2vh;
+  height: 2vh;
+  position: relative;
+  align-self: center;
+  grid-column: 1;
 }
 
 .link1 {
