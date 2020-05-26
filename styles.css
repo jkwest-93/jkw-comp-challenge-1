@@ -1,47 +1,67 @@
 body {
   font-family: Arial Black;
+  color: #024249;
   margin: 0px;
   padding: 0px;
   background-color: #F7F7F7;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
+
   background-color: #024249;
   color: #D6CBD3;
   font-size: 2vw;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (max-width: 640px) {
   .header {
     display: flex;
+    justify-content: space-between;
     flex-direction: column-reverse;
     align-items: center;
   }
-
   .header-right {
-    display: flex;
-    flex-direction: column;
+    float: right;
   }
-
   .header-left {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    float: left;
   }
-
   .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
   .card {
     flex: 0 1 calc(50% - 1em);
   }
 }
 
-@media screen and (min-width: 60em) {
+@media screen and (max-width: 960px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-left {
+    float: left;
+  }
+  .header-right {
+    float: right;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    flex: 0 1 calc(25% - 1em);
+  }
+}
+
+@media screen and (min-width: 961px) {
   .header {
     display: flex;
     justify-content: space-between;
@@ -51,21 +71,15 @@ body {
     display: flex;
     flex-direction: row;
     align-self: flex-end;
+    float: left;
   }
-
   .header-right {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
+    float: right;
   }
   .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-
-  .card {
-    flex: 0 1 calc(25% - 1em);
   }
 }
 
